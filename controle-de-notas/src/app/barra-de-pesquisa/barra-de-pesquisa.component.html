@@ -1,6 +1,12 @@
-<div class="barraDePesquisa">
-    <mat-form-field class="input" appearance="fill">
-        <mat-label>Buscar por matricula</mat-label>
-        <input matInput placeholder="Ex. 123" value="1">
-    </mat-form-field>
-</div>
+<mat-drawer-container class="exemple-container"  autosize>
+    <mat-drawer #drawer  mode="over">
+        <app-menu-lateral></app-menu-lateral>
+    </mat-drawer>
+    <div class="barraDePesquisa">
+        <div class="botao-menu" mat-button (click)="drawer.toggle()"><h1>Menu</h1></div>
+        <mat-form-field class="input" appearance="fill">
+            <mat-label>Buscar por matricula</mat-label>
+            <input matInput placeholder="Ex. 123" value="1">
+        </mat-form-field>
+    </div>
+</mat-drawer-container>
