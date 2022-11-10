@@ -2,11 +2,13 @@
     <mat-drawer #drawer  mode="over">
         <app-menu-lateral></app-menu-lateral>
     </mat-drawer>
-    <div class="barraDePesquisa">
-        <div class="botao-menu" mat-button (click)="drawer.toggle()"><h1>Menu</h1></div>
-        <mat-form-field class="input" appearance="fill">
-            <mat-label>Buscar por matricula</mat-label>
+    <div class="barraDeMenu">
+        <mat-icon class="botao-menu" (click)="drawer.toggle()">menu</mat-icon>
+        <div class="input">
+            <label>Buscar por matricula</label>
             <input matInput placeholder="Ex. 123" value="1">
-        </mat-form-field>
+        </div>
+            
+        
     </div>
 </mat-drawer-container>
