@@ -1,0 +1,16 @@
+.barraDePesquisa{
+    position: fixed;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    background-color: var(--bg);
+    width: 100%;
+    height: 70px;
+    
+    
+    .input{
+        margin-top: 20px;
+        margin-right: 105px;
+    }
+   
+}
