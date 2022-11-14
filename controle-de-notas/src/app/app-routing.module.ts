@@ -5,7 +5,7 @@ import { MostrarTodosAlunosComponent } from './pages/mostrar-todos-alunos/mostra
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: '/todososalunos', component:  MostrarTodosAlunosComponent }
+  { path: 'todososalunos', component:  MostrarTodosAlunosComponent }
 ];
 
 @NgModule({

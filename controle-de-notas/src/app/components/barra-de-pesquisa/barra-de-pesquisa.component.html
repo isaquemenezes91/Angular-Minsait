@@ -1,6 +1,48 @@
-<mat-drawer-container class="exemple-container"  autosize>
-    <mat-drawer #drawer  mode="over">
-        <app-menu-lateral></app-menu-lateral>
+
+    <mat-drawer #drawer>
+        
+        <div class="menu">
+            <div class="botoes">
+                
+                <button mat-fab  class="botao btn-close" (click)="drawer.toggle()">
+                    <mat-icon >close</mat-icon>
+                </button>
+                
+                <a routerLink="/">
+                    <button mat-fab  class="botao" (click)="drawer.toggle()">
+                    <mat-icon >home</mat-icon>
+                    </button>
+                </a>
+                <a routerLink="/">
+                    <button mat-fab  class="botao" (click)="drawer.toggle()">
+                    <mat-icon >home</mat-icon>
+                    </button>
+                </a>
+                <a href="/todososalunos">
+                    <button mat-fab  class="botao" (click)="drawer.toggle()">
+                        <mat-icon>supervisor_account</mat-icon>
+                    </button>
+                </a>
+                <button mat-fab class="botao" (click)="drawer.toggle()">
+                    <mat-icon>group_add</mat-icon>
+                </button>
+                <button mat-fab class="botao" (click)="drawer.toggle()">
+                    <mat-icon>delete</mat-icon>
+                </button>
+                <button mat-fab class="botao" (click)="drawer.toggle()">
+                    <mat-icon>bar_chart</mat-icon>
+                </button>
+
+            </div>
+            
+
+            <div class="configuracao">
+                <button mat-fab aria-label="Example icon button with a delete icon" class="botao">
+                    <mat-icon>settings</mat-icon>
+                </button>
+            </div>
+        </div>
+
     </mat-drawer>
     <div class="barraDeMenu">
         <mat-icon class="botao-menu" (click)="drawer.toggle()">menu</mat-icon>
@@ -11,4 +53,3 @@
             
         
     </div>
-</mat-drawer-container>

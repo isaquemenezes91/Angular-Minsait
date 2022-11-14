@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.component';
+
 import { BarraDePesquisaComponent } from './components/barra-de-pesquisa/barra-de-pesquisa.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { MostrarTodosAlunosComponent } from './pages/mostrar-todos-alunos/mostrar-todos-alunos.component';
@@ -21,7 +21,6 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent,
-    MenuLateralComponent,
     BarraDePesquisaComponent,
     HomePageComponent,
     MostrarTodosAlunosComponent,

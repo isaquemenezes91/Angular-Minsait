@@ -1,10 +1,4 @@
-.exemple-container{
 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     .barraDeMenu{
         position: fixed;
         display: flex;
@@ -32,4 +26,49 @@
         
     
     }
-}
+
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 320px;
+        height: 100%;
+        
+        background-color: var(--bg);
+        z-index: 99;
+        box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+        
+        .botoes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+            margin-bottom: 200px;
+            a{
+                text-decoration: none;
+            }
+           
+        }
+        .configuracao{
+            display: flex;
+            align-self: center;
+           
+        }
+        .botao{
+            background-color: var(--primary);
+        }
+        .btn-close{
+            mat-icon{
+                position: relative;
+                top: -14px;
+            }
+            position: relative;
+            left: 95px;
+            bottom: 60px;
+            width: 30px;
+            height: 30px;
+        }
+    }
