@@ -1,0 +1,35 @@
+.card-guia{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .alinhamento{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        padding-bottom: 50px;
+        .card{
+            display: flex;
+            width: 400px;
+            height: 200px;
+            background-color: gainsboro;
+            border-radius: 30px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            .icon{
+                transform: scale(3);
+                position: relative;
+                top: -10px;
+            }
+            p{
+                width: 200px;
+                font-size: medium;
+            }   
+        }
+    }
+    
+}

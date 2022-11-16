@@ -1,1 +1,42 @@
-<p>mostrar-todos-alunos works!</p>
+<button  (click)="mostrarTodosAlunos()" class="button" role="button">Mostrar todos Alunos</button>
+
+<div   class="card-aluno">
+    
+    <div class="card" *ngFor="let aluno of alunos">
+        
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <h2>Matricula : {{aluno.id}}</h2>
+                </mat-panel-title>
+                <mat-panel-title>
+                    <h2>Nome: {{aluno.nome}}.</h2>
+                  </mat-panel-title>
+                <mat-panel-description>
+                  Clique no card para visualizar as notas!
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              
+                <div *ngFor="let nota of aluno.notas" >
+                    <div class="notas">
+                        <h3>id: {{nota.id}}</h3>
+                        <h3 >Disciplina: {{disciplina(nota.disciplina)}}</h3>
+                        <h3 >Nota: {{nota.notaDaDisciplina}}</h3>
+                        
+                    </div>
+                    <hr>
+                </div>
+              
+              
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+        
+            
+    <div>
+</div>
+
+
+
+

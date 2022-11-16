@@ -1,0 +1,26 @@
+.menu{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    h1,.alinhar{
+        padding: 20px 20px 20px 20px;
+    }
+    
+    input{
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        border: solid 1px;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        color: rgb(44, 50, 54);
+        
+    }
+    textarea:focus, input:focus{
+        outline: none;
+    }
+
+}   
+

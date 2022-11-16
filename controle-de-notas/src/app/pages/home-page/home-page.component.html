@@ -1,24 +1,44 @@
-<div class="card-guia">
-    <h1>Guia da Página</h1>
-    <hr>
-    <div class="card">
-        <p>icon</p>
-        <p>Mostra todos os alunos cadastrados e suas respectivas notas.</p>
-    </div>
-    <div class="card">
-        <p>icon</p>
-        <p>Remove notas ou alunos passando o numero de matricula como busca.</p>
-    </div>
-    <div class="card">
-        <p>icon</p>
-        <p>Adiciona novos alunos e cadastra novas notas.</p>
-    </div>
-    <div class="card">
-        <p>icon</p>
-        <p>Mostra métricas como numero de alunos matriculados e em quais diciplinas.</p>
-    </div>
-    <div class="card">
-        <p>icon</p>
-        <p>Personaliza a plataforma, alterando as cores dos itens.</p>
-    </div>
-</div>
+<mat-tab-group>
+    <mat-tab>
+        <ng-template mat-tab-label >
+            <mat-icon>help</mat-icon>
+            <span  class="gap">Guia</span>
+          </ng-template>
+        <app-guia></app-guia>
+    </mat-tab>
+    <mat-tab >
+        <ng-template mat-tab-label >
+            <mat-icon>supervisor_account</mat-icon>
+            <span  class="gap">Mostrar Todos</span>
+        </ng-template>
+        <app-mostrar-todos-alunos></app-mostrar-todos-alunos>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label >
+            <mat-icon>group_add</mat-icon>
+            <span  class="gap">Adicionar</span>
+          </ng-template>
+        <app-adicionar></app-adicionar>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label >
+            <mat-icon>delete</mat-icon>
+            <span  class="gap">Remover</span>
+          </ng-template>
+        <app-remover></app-remover>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label >
+            <mat-icon>bar_chart</mat-icon>
+            <span  class="gap">Metricas</span>
+          </ng-template>
+        <app-metricas></app-metricas>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label >
+            <mat-icon>update</mat-icon>
+            <span  class="gap">Atualizar</span>
+          </ng-template>
+        <app-atualizar></app-atualizar>
+    </mat-tab>
+</mat-tab-group>
